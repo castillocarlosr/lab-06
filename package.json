@@ -1,0 +1,24 @@
+{
+  "name": "lab-06",
+  "version": "1.0.0",
+  "description": "**Author**: Carlos Castillo & Raymond Ruazol **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castillocarlosr/lab-06.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castillocarlosr/lab-06/issues"
+  },
+  "homepage": "https://github.com/castillocarlosr/lab-06#readme"
+}
