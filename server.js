@@ -12,18 +12,12 @@ const app = express();
 app.use(cors());
 
 app.get('/location', (request, response) => {
-/*
-"formatted_query": "Lynnwood, WA, USA",
-"latitude": 47.8209301,
-"longitude": -122.3151314,
-"search_query": "Seattle,WA"
-*/
   const locationData = searchLatiLong(request.query.data);
   response.send(locationData);
 });
 
 function searchLatiLong(query){
-  const geoData = require('./data/geoData');
+  const geoData = require('./data/geo.json');
   const location = new Location(geoData.results[0]);
   location.search_query = query;
   return location;
