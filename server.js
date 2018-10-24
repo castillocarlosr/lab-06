@@ -28,5 +28,9 @@ function Location(data){
   this.latitude = data.geometry.location.lat;
   this.longitude = data.geometry.location.lng;
 }
+//ToDO:  create an object constructor for weahter app.
+//something like function WEATHER(dataWeather){}
+//something like app.get('/weather', (request, response) => {});
+//got it.  ok GO!
 
 app.listen(PORT, () => console.log(`App is up on ${PORT}`) );
